@@ -1,6 +1,6 @@
-#slack-clone
-> vanilla js 로 slack 만들기 
+# slack-clone
+> vanilla js 로 slack clone project ☘️
 
-# npm i 
+## npm i 
 
-# npm run dev
+## npm run dev
