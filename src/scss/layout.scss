@@ -1,0 +1,14 @@
+#wrap {display:grid;height:100vh;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "a a a a   a a a a   a a a a"
+    "b b c c   c c c c   c c c c"
+    "b b c c   c c c c   c c c c"
+    "b b c c   c c c c   c c c c"
+    "b b c c   c c c c   c c c c"
+    "b b d d   d d d d   d d d d";
+    .header {grid-area:a;background:#bbbcb5;}
+    .channel-list {grid-area:b;background:#777976;}
+    .message-view {grid-area:c;background:#888865;}
+    .message-input {grid-area:d;background:#e4eac0;}
+}
