@@ -18,15 +18,12 @@ module.exports = {
             {
                 test: /\.(css|scss)$/i,
                 use: [
-                    "style-loader",
+                    MiniCssExtractPlugin.loader,
                     "css-loader",
                     {
                         loader: "sass-loader",
                         options: {
                             implementation: require("sass"),
-                            // sassOptions: {
-                            //     localIdentContext: path.resolve(__dirname, "src"),
-                            // },
                         },
                     },
                 ],
@@ -54,14 +51,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            //filename: `[name].css`,
-          }),
-        ...(process.env.NODE_ENV === "production" 
-            ? [new MiniCssExtractPlugin({ 
-                    filename: `[name].css` 
-                })
-            ] 
-            : []
-        ),
+            filename: '[name].[contenthash].css', 
+        })
     ],
 }
