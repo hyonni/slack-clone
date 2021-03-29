@@ -1,0 +1,18 @@
+.message-input{
+    padding:16px;
+    .editor-wrap {
+        border: 1px solid #242424;
+        border-radius: 4px;
+        .texteditor{
+            min-height: 80px;
+            max-height: 200px;
+            overflow-y: scroll;
+            outline: none;
+            font-size: 16px;
+            &[contenteditable=true]:empty:before {
+                content: attr(data-placeholder);
+                color: #555;
+            }
+        }
+    }
+}
