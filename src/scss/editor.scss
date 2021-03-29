@@ -9,7 +9,12 @@
             overflow-y: scroll;
             outline: none;
             font-size: 16px;
+            padding:12px;
             &[contenteditable=true]:empty:before {
+                content: attr(data-placeholder);
+                color: #555;
+            }
+            &[data-placeholder]:not(:focus):not([data-div-placeholder-content]):before {
                 content: attr(data-placeholder);
                 color: #555;
             }
