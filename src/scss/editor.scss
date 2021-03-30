@@ -1,22 +1,82 @@
 .message-input{
-    padding:16px;
+    padding:16px;margin-top:auto;background-color:#fff;
     .editor-wrap {
         border: 1px solid #242424;
         border-radius: 4px;
         .texteditor{
-            min-height: 80px;
+            min-height: 120px;
             max-height: 200px;
             overflow-y: scroll;
             outline: none;
             font-size: 16px;
-            padding:12px;
+            padding:16px;
             &[contenteditable=true]:empty:before {
                 content: attr(data-placeholder);
                 color: #555;
             }
-            &[data-placeholder]:not(:focus):not([data-div-placeholder-content]):before {
-                content: attr(data-placeholder);
-                color: #555;
+            // &[data-placeholder]:not(:focus):not([data-div-placeholder-content]):before {
+            //     content: attr(data-placeholder);
+            //     color: #555;
+            // }
+        }
+        .toolbar{
+            padding: 6px 16px;
+            background-color: #f7f7f7;
+            border-radius: 0px 0px 4px 4px;
+            position: relative;
+            .beauty {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                button{
+                    cursor: pointer;
+                    margin-right: 8px;
+                    padding: 10px;
+                    &:hover{
+                        background-color: #ededed;
+                    }
+                    ion-icon{
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+            #toast{
+                position: absolute;
+                background: #242424;
+                bottom:56px;
+                color: #fff;
+                padding: 12px;
+                border-radius: 4px;
+                display: none;
+                &::before{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid #000;
+                    border-right: 8px solid transparent;
+                    border-left: 8px solid transparent;
+                    position: absolute;
+                    transform: translate(-50%, 0px);
+                    left: 50%;
+                    bottom:-8px;
+                }
+                &.bold{
+                    display: block;
+                    transform: translate(-10px, 0px);
+                }
+                &.italic {
+                    display: block;
+                    transform: translate(32px, 0px);
+                }
+                &.list {
+                    display: block;
+                    transform: translate(78px, 0px);
+                }
+                &.code {
+                    display: block;
+                    transform: translate(125px, 0px);
+                }
             }
         }
     }
