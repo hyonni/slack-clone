@@ -1,0 +1,13 @@
+.sidebar{display:grid;border-right:1px solid #dfdfdf;
+    .create{border-bottom:1px solid #dfdfdf;display:flex;height:64px;justify-content: space-between;padding: 0 16px;align-items: center;
+        button{width:36px;height:36px;border-radius:100%;background:antiquewhite;}
+        ion-icon{width:16px;height:16px;}
+    }
+    .static-list{font-size:15px;padding:0 16px;
+        li{height:28px;}
+        button{width: 100%;text-align: left;height: 100%;display: flex;align-items: center;}
+        ion-icon{width:16px;height:16px;margin-right:12px;}
+    }
+    .channel-list{padding:0 16px;}
+    .direct-message{padding:0 16px;}
+}
