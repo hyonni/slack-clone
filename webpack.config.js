@@ -32,9 +32,16 @@ module.exports = {
                 test: /\.(png|jpe?g|gif)$/i,
                 loader: 'file-loader',
                 options: {
-                    outputPath: 'images',
+                    publicPath: (url, resourcePath, context) => {
+                        console.log(url, resourcePath, context)
+                        return `images/${url}`;
+                    },
+                    outputPath: (url, resourcePath, context) => {
+                        return `images/${url}`;
+                    },
+                    //outputPath: '/images',
                     name: '[name].[ext]?[hash]',
-                    limit: 5000
+                    // limit: 5000
                 },
             },
         ]
