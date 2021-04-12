@@ -18,14 +18,14 @@
             &:hover {background-color:#f9f9f9;
                 .actions {display:block;}
             }
-            &[message-save] {background-color:#fffbeb;
+            &[data-save] {background-color:#fffbeb;
                 &:before {padding-left:13px;content:'Added to your saved items';font-size: 12px; color: #545454;background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3EBookmark%3C/title%3E%3Cpath d='M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z' fill='%23ff3054' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") -3px center no-repeat;}
                 button {
                     .ionicon-fill-none {fill: #ff3054;}
                 }
             }
         }
-        .actions {display:none;position:absolute;right:20px;top:-10px;border-radius:5px;border:1px solid #e0e0e0;background-color:#fff;
+        .actions {display:block;position:absolute;right:20px;top:-10px;border-radius:5px;border:1px solid #e0e0e0;background-color:#fff;
             ul {display: flex;
                 li {
                     button {

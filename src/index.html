@@ -8,101 +8,214 @@
 </head>
 <body>
     <div id="wrap">
-        <header class="header">헤더</header>
-        <section class="channel-list">channel</section>
-        <section class="message-view">
-            <div class="view-header">
-                <div class="sand-message-name">
-                    <h2><i class="state">on</i> lacey</h2>
-                    <button type="button" class="btn-pin"><ion-icon name="flag-outline"></ion-icon>3</button>
-                </div>
-                <button type="button" class="btn-call" title="call"><ion-icon name="call-outline"></ion-icon></button>
-                <button type="button" class="btn-info" title="info"><ion-icon name="information-circle-outline"></ion-icon></button>
-            </div>
-            <div class="view-container">
-                
-                <div class="message" message-save>
-                    <div class="message-profile">
-                        <div class="img"></div>
-                        <strong class="name">lacey</strong>
-                        <time>00:00 PM</time>
+        <header class="header">
+            <h1 class="logo">슬래기</h1>
+            <ul class="util">
+                <li class="prev-button"><button type="button"><ion-icon name="arrow-back-outline"></ion-icon></button></li>
+                <li class="next-button"><button type="button"><ion-icon name="arrow-forward-outline"></ion-icon></button></li>
+                <li class="history"><button type="button"><ion-icon name="time-outline"></ion-icon></button></li>
+            </ul>
+            <button type="button" class="profile"><img src="/images/snope2.jpg" alt=""></button>
+        </header>
+        <main class="workspace">
+            <article class="sidebar">
+                <section class="inner">
+                    <div class="create">
+                        <h2>슬래기</h2>
+                        <button type="button"><ion-icon name="create-outline"></ion-icon></button>
                     </div>
-                    <p>가나다라마바사</p>
-                    <aside class="actions">
-                        <ul>
-                            <li class="reation"><button type="button" class="btn-reation"><ion-icon name="happy-outline"></ion-icon></button></li>
-                            <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
-                            <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
-                            <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
-                            <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
+                    <div class="list">
+                        <ul class="static-list">
+                            <li><button type="button"><ion-icon name="list-outline"></ion-icon>읽지 않은 모든 항목</button></li>
+                            <li><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon>스레드</button></li>
+                            <li><button type="button"><ion-icon name="chatbubble-ellipses-outline"></ion-icon>모든 DM</button></li>
                         </ul>
-                    </aside>
+                        <div class="channel-list">
+                            <button type="button"><ion-icon name="caret-down-outline"></ion-icon>채널</button>
+                            <ul>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                                <li><button type="button"><span>#</span>채널1</button></li>
+                                <li><button type="button"><span>#</span>채널2</button></li>
+                                <li><button type="button"><span>#</span>채널3</button></li>
+                                <li><button type="button"><span>#</span>채널4</button></li>
+                            </ul>
+                        </div>
+                        <div class="direct-message">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="contents">
+                <div class="message-view">
+                    <section class="view-header">
+                        <div class="sand-message-name">
+                            <h3><i class="state">on</i> lacey</h3>
+                            <button type="button" class="btn-pin"><ion-icon name="flag-outline"></ion-icon>3</button>
+                        </div>
+                        <button type="button" class="btn-call" title="call"><ion-icon name="call-outline"></ion-icon></button>
+                        <button type="button" class="btn-info" title="info"><ion-icon name="information-circle-outline"></ion-icon></button>
+                    </section>
+                    <section class="view-container">
+                        <article class="message" data-save="1">
+                            <div class="message-profile">
+                                <div class="img"></div>
+                                <strong class="name">lacey</strong>
+                                <time time="2021-04-09">00:00 PM</time>
+                            </div>
+                            <p>가나다라마바사</p>
+                            <aside class="actions">
+                                <ul>
+                                    <li class="reation"><button type="button" class="btn-reation"><ion-icon name="happy-outline"></ion-icon></button></li>
+                                    <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
+                                    <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
+                                    <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
+                                    <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
+                                </ul>
+                            </aside>
+                        </article>
+                        <article class="message" data-save="2">
+                            <p>아자차카타파하</p>
+                            <aside class="actions">
+                                <ul>
+                                    <li class="reation"><button type="button"><ion-icon name="happy-outline"></ion-icon></button></li>
+                                    <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
+                                    <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
+                                    <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
+                                    <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
+                                </ul>
+                            </aside>
+                        </article>
+                        <article class="message">
+                            <p>가나다라마바사</p>
+                            <aside class="actions">
+                                <ul>
+                                    <li class="reation"><button type="button"><ion-icon name="happy-outline"></ion-icon></button></li>
+                                    <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
+                                    <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
+                                    <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
+                                    <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
+                                </ul>
+                            </aside>
+                        </article>
+                        <article class="message">
+                            <p>아자차카타파하</p>
+                            <aside class="actions">
+                                <ul>
+                                    <li class="reation"><button type="button"><ion-icon name="happy-outline"></ion-icon></button></li>
+                                    <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
+                                    <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
+                                    <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
+                                    <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
+                                </ul>
+                            </aside>
+                        </article>
+                        <hr>
+                    </section>
                 </div>
-                <div class="message" message-save><p>아자차카타파하</p>
-                    <aside class="actions">
-                        <ul>
-                            <li class="reation"><button type="button"><ion-icon name="happy-outline"></ion-icon></button></li>
-                            <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
-                            <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
-                            <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
-                            <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
-                        </ul>
-                    </aside>
-                </div>
-                <div class="message"><p>가나다라마바사</p>
-                    <aside class="actions">
-                        <ul>
-                            <li class="reation"><button type="button"><ion-icon name="happy-outline"></ion-icon></button></li>
-                            <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
-                            <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
-                            <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
-                            <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
-                        </ul>
-                    </aside>
-                </div>
-                <div class="message"><p>아자차카타파하</p>
-                    <aside class="actions">
-                        <ul>
-                            <li class="reation"><button type="button"><ion-icon name="happy-outline"></ion-icon></button></li>
-                            <li class="thread"><button type="button"><ion-icon name="chatbubbles-outline"></ion-icon></button></li>
-                            <li class="shared"><button type="button"><ion-icon name="share-outline"></ion-icon></button></li>
-                            <li class="save"><button type="button" class="btn-save"><ion-icon name="bookmark-outline"></ion-icon></button></li>
-                            <li class="more"><button type="button"><ion-icon name="ellipsis-vertical-outline"></ion-icon></button></li>
-                        </ul>
-                    </aside>
-                </div>
-                <hr>
-            </div>  
-        </section>
-        <section class="message-input">
-            <div class="editor-wrap">
-                <div contenteditable="true" class="texteditor" data-placeholder="">
+                <section class="message-input">
+                        <div class="editor-wrap">
+                            <div contenteditable="true" class="texteditor" data-placeholder="">
 
-                </div>
-                <div class="toolbar">
-                    <div class="beauty">
-                        <button onclick="execCommand('bold')" class="bold">
-                            <b>B</b>
-                        </button>
-                        <button onclick="execCommand('italic')" class="italic">
-                            <ion-icon name="information-outline"></ion-icon>
-                        </button>
-                        <button onclick="execCommand('list')" class="list">
-                            <ion-icon name="list-outline"></ion-icon>
-                        </button>
-                        <button onclick="execCommand('code')" class="code">
-                            <ion-icon name="code-slash-outline"></ion-icon>
-                        </button>
-                    </div>
-                    <div>
-                        <button>
-                            <ion-icon name="send-outline"></ion-icon>
-                        </button>
-                    </div>
-                    <div id="toast" class="">bold</div>
-                </div>
-            </div>
-        </section>
+                            </div>
+                            <div class="toolbar">
+                                <div class="beauty">
+                                    <button onclick="execCommand('bold')" class="bold">
+                                        <b>B</b>
+                                    </button>
+                                    <button onclick="execCommand('italic')" class="italic">
+                                        <ion-icon name="information-outline"></ion-icon>
+                                    </button>
+                                    <button onclick="execCommand('list')" class="list">
+                                        <ion-icon name="list-outline"></ion-icon>
+                                    </button>
+                                    <button onclick="execCommand('code')" class="code">
+                                        <ion-icon name="code-slash-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <div id="toast" class="">bold</div>
+                            </div>
+                        </div>
+                    </section>
+            </article>
+        </main>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
