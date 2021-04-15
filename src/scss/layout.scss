@@ -8,7 +8,7 @@
         .inner {grid-area:grid-sidebar-inner;display:flex;flex-direction:column;min-height:0;min-width:0;}
         .list {min-height:0;width:100%;position:relative;padding:0;display:flex;flex-direction:column;height:0;flex:1 0 auto;overflow:auto;}
     }
-    .contents {display:grid;grid-area:grid-contents;grid-template-columns: auto;grid-template-areas: "grid-contents-inner";grid-template-rows: auto;
+    .contents {display:grid;grid-area:grid-contents;grid-template-columns: auto;grid-template-areas: "grid-contents-inner";grid-template-rows: auto 152px;
         .inner{grid-area:grid-contents-inner;}
     }
 }
