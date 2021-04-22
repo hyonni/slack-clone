@@ -1,10 +1,10 @@
 .message-input{
     padding:16px;margin-top:auto;background-color:#fff;
     .editor-wrap {
-        border: 1px solid #242424;
+        border: 1px solid #aaa;
         border-radius: 4px;
         .texteditor{
-            min-height: 120px;
+            min-height: 70px;
             max-height: 200px;
             overflow-y: scroll;
             outline: none;
@@ -20,26 +20,37 @@
             // }
         }
         .toolbar{
-            padding: 6px 16px;
+            padding: 2px 16px;
             background-color: #f7f7f7;
             border-radius: 0px 0px 4px 4px;
             position: relative;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            button {
+                cursor: pointer;
+                margin-right: 8px;
+                padding: 10px;
+
+                b {
+                    font-size: 15px;
+                }
+
+                &:hover {
+                    background-color: #ededed;
+                }
+
+                ion-icon {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
             .beauty {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                button{
-                    cursor: pointer;
-                    margin-right: 8px;
-                    padding: 10px;
-                    &:hover{
-                        background-color: #ededed;
-                    }
-                    ion-icon{
-                        width: 18px;
-                        height: 18px;
-                    }
-                }
+                margin-right: auto;
             }
             #toast{
                 position: absolute;
@@ -59,7 +70,7 @@
                     position: absolute;
                     transform: translate(-50%, 0px);
                     left: 50%;
-                    bottom:-8px;
+                    bottom:-6px;
                 }
                 &.bold{
                     display: block;
