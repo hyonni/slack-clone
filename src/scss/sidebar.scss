@@ -9,5 +9,29 @@
         ion-icon{width:16px;height:16px;margin-right:12px;}
     }
     .channel-list{padding:0 16px;}
+    .channel-header{display:flex;justify-content: space-between;align-items: center;height:28px;
+        > button ion-icon{margin-left:0;}
+        ion-icon{width:16px;height:16px;margin-left:12px;}
+        button{font-size:15px;display:flex;align-items:center;}
+        ul{display:flex;}
+    }
+    .channel-body{
+        li{height:28px;display:flex;align-items:center;}
+        button{display:block;width:100%;height:100%;text-align:left;}
+    }
     .direct-message{padding:0 16px;}
+}
+.channel-create{display: flex;position: fixed;left: 0;right: 0;bottom: 0;top: 0; z-index:100;width: 100%;height: 100%;align-items: center;justify-content: center;background-color: rgba(0, 0, 0, .8);
+    .inner{position: relative;display: flex;flex-direction: column;width: 93%;max-width: 400px;min-height: 200px;overflow: hidden;padding: 24px;max-height: 80%;background-color: #fff;word-break: keep-all;border-radius: 6px;}
+    h2{font-size:20px;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;
+        ion-icon{width:24px;height:24px;}
+    }
+    .desc{margin-bottom:12px;font-size:13px;}
+    div{margin-top:12px;
+        &:first-of-type{margin-top:0;}
+        .label{font-size:15px;}
+        input{border:1px solid #CCC;border-radius:2px;width:100%;height:40px;margin-top:4px;padding:0 12px;}
+    }
+    .create{background:#242424;color:#fffbeb;font-size:16px;width:100%;height:36px;border-radius:6px;margin-top:24px;}
+
 }
