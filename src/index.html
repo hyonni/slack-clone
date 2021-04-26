@@ -191,29 +191,53 @@
                     </section>
                 </div>
                 <section class="message-input">
-                        <div class="editor-wrap">
-                            <div contenteditable="true" class="texteditor" data-placeholder="">
-
-                            </div>
-                            <div class="toolbar">
-                                <div class="beauty">
-                                    <button onclick="execCommand('bold')" class="bold">
-                                        <b>B</b>
-                                    </button>
-                                    <button onclick="execCommand('italic')" class="italic">
-                                        <ion-icon name="information-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="execCommand('list')" class="list">
-                                        <ion-icon name="list-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="execCommand('code')" class="code">
-                                        <ion-icon name="code-slash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                                <div id="toast" class="">bold</div>
-                            </div>
+                    <div class="editor-wrap">
+                        <div contenteditable="true" class="texteditor">
+                            <p></p>
                         </div>
-                    </section>
+                        <div class="toolbar">
+                            <div class="beauty">
+                                <button onclick="format('b')" class="bold">
+                                    <ion-icon name="pencil-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('i')" class="italic">
+                                    <ion-icon name="information-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('code')" class="code">
+                                    <ion-icon name="code-slash-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('link')" class="link">
+                                    <ion-icon name="link-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('ol-list')" class="list">
+                                    <ion-icon name="list-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('insertunorderedlist')" class="outline">
+                                    <ion-icon name="tablet-landscape-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="">
+                                <button onclick="format('insertunorderedlist')" class="hideTool">
+                                    <ion-icon name="text-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('insertunorderedlist')" class="mention">
+                                    <ion-icon name="at-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('insertunorderedlist')" class="emoji">
+                                    <ion-icon name="happy-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('insertunorderedlist')" class="file">
+                                    <ion-icon name="attach-outline"></ion-icon>
+                                </button>
+                                <button onclick="format('insertunorderedlist')" class="send">
+                                    <ion-icon name="send-outline"></ion-icon>
+                                </button>
+                                
+                            </div>
+                            <div id="toast" class=""></div>
+                        </div>
+                    </div>
+                </section>
             </article>
         </main>
     </div>

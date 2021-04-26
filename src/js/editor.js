@@ -1,15 +1,26 @@
-const $chanelName = document.querySelector('.sand-message-name h2').textContent;
-const $texteditor = document.querySelector('.texteditor');
-const $beautyList = document.querySelectorAll('.beauty button');
+const $chanelName = document.querySelector('.sand-message-name h3').textContent;
+const $texteditor = document.querySelector('.texteditor p');
+const $beautyList = document.querySelectorAll('.toolbar button');
 const $toast = document.querySelector('#toast');
+const $texteditor2 = document.querySelector('.texteditor');
 function created(){
-    $texteditor.dataset.placeholder = "message " + $chanelName;
+    $texteditor.innerText = "message " + $chanelName;
 }
 created();
 function execCommand(e){
     console.log(e);
 }
-for(let i = 0; i<$beautyList.length; i++){
+function format(e) {
+    let selected = window.getSelection().getRangeAt(0);
+    let node = document.createElement(e);
+    console.log(selected)
+    console.log(node)
+    node.innerText = selected;
+
+    selected.deleteContents();
+    selected.insertNode(node);
+}
+for(let i = 0; i< $beautyList.length; i++){
     $beautyList[i].onmouseover = function (){
         $toast.classList = '';
         $toast.innerText = this.className;
@@ -19,4 +30,5 @@ for(let i = 0; i<$beautyList.length; i++){
         $toast.classList = '';
     }
 }
+window.format = format;
 window.execCommand = execCommand;

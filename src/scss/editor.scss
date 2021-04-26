@@ -1,10 +1,13 @@
+i {
+    font-style: italic;
+}
 .message-input{
     padding:16px;margin-top:auto;background-color:#fff;
     .editor-wrap {
         border: 1px solid #aaa;
         border-radius: 4px;
         .texteditor{
-            min-height: 70px;
+            min-height: 47px;
             max-height: 200px;
             overflow-y: scroll;
             outline: none;
@@ -20,8 +23,8 @@
             // }
         }
         .toolbar{
-            padding: 2px 16px;
-            background-color: #f7f7f7;
+            padding: 4px 12px;
+            background-color: #f9f9f9;
             border-radius: 0px 0px 4px 4px;
             position: relative;
             border-top: 1px solid #eee;
@@ -30,20 +33,19 @@
             align-items: center;
             button {
                 cursor: pointer;
-                margin-right: 8px;
-                padding: 10px;
-
-                b {
-                    font-size: 15px;
-                }
-
+                margin-right: 6px;
+                padding: 16px;
+                position: relative;
                 &:hover {
                     background-color: #ededed;
                 }
-
                 ion-icon {
                     width: 18px;
                     height: 18px;
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-9px, 0px);
                 }
             }
             .beauty {
@@ -54,7 +56,7 @@
             }
             #toast{
                 position: absolute;
-                background: #242424;
+                background-color:#242424;
                 bottom:56px;
                 color: #fff;
                 padding: 12px;
@@ -78,16 +80,53 @@
                 }
                 &.italic {
                     display: block;
-                    transform: translate(32px, 0px);
+                    transform: translate(28px, 0px);
+                }
+                &.link {
+                    display: block;
+                    transform: translate(102px, 0px);
                 }
                 &.list {
                     display: block;
-                    transform: translate(78px, 0px);
+                    transform: translate(144px, 0px);
                 }
                 &.code {
                     display: block;
-                    transform: translate(125px, 0px);
+                    transform: translate(65px, 0px);
                 }
+                &.outline {
+                    display: block;
+                    transform: translate(170px, 0px);
+                }
+                &.hideTool {
+                    display: block;
+                    right: 0px;
+                    transform: translate(-160px, 0px);
+                }
+                &.mention {
+                    display: block;
+                    right: 0px;
+                    transform: translate(-120px, 0px);
+                }
+                &.emoji {
+                    display: block;
+                    right: 0px;
+                    transform: translate(-88px, 0px);
+                }
+                &.file {
+                    display: block;
+                    right: 0px;
+                    transform: translate(-53px, 0px);
+                }
+                &.send {
+                    display: block;
+                    right: 0px;
+                    transform: translate(-10px, 0px);
+                }
+                // &.hideTool{
+                //     display: block;
+                //     transform: translate(170px, 0px);
+                // }
             }
         }
     }
