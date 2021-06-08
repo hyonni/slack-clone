@@ -10,7 +10,7 @@ module.exports = {
     },
     output : {
         path : path.resolve(__dirname, "/dist"),
-        filename : '[name].js',
+        filename : 'js/[name].js',
         clean: true,
     },
     module : {
@@ -39,9 +39,9 @@ module.exports = {
                     outputPath: (url, resourcePath, context) => {
                         return `images/${url}`;
                     },
-                    //outputPath: '/images',
+                    outputPath: 'images/',
                     name: '[name].[ext]?[hash]',
-                    // limit: 5000
+                    limit: 5000
                 },
             },
         ]
@@ -58,7 +58,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css', 
+            filename: 'css/[name].[contenthash].css', 
         })
     ],
 }
