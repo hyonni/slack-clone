@@ -1,5 +1,5 @@
 .message-view {
-    .view-header {display: flex;z-index:1;width: 100%;padding:5px 16px;border-bottom:1px solid #e0e0e0;background-color:#fff;
+    .view-header {display: flex;z-index:1;width: 100%;padding:5px 16px;border-bottom:1px solid #e0e0e0;background-color:#fff;justify-content: space-between;
         .sand-message-name {
             h2 {
                 .state {text-align: center;text-indent: -999em; display: inline-block; width: 8px; height: 8px; border: 1px solid #a0a0a0; border-radius: 50%; vertical-align: middle; }
@@ -9,8 +9,12 @@
         .btn-call {margin-left:auto;}
         .btn-info {margin-left:16px;}
     }
-    .views {
-        .view-container { display: flex; flex-direction: column; justify-content: flex-end;position:relative;overflow-y:auto;height: 100%;padding:0 0 20px;
+    .views {overflow-y: auto;height: calc(100vh - 199px);
+        &::-webkit-scrollbar { width: 5px;}
+        &::-webkit-scrollbar-thumb { background-color: #555;border-radius:5px;}
+        &::-webkit-scrollbar-track { background-color: transparent;}
+        .view-container { display: flex; flex-direction: column; justify-content: flex-end;position:relative;padding:0 0 20px;
+            //height:100%;
             .message-profile {display: flex;position:relative;margin-bottom:5px;
                 .img {display:block;position:absolute;left:-36px;width:30px;height:30px;background-color:#f9cfd7;border-radius: 5px;}
                 time {margin-left: 6px;font-size:11px;font-size: 11px; color: #828282;}
@@ -25,15 +29,15 @@
                         .ionicon-fill-none {fill: #ff3054;}
                     }
                 }
-                .figure-image {max-width:450px;}
-            }
-            .actions {display:block;position:absolute;right:20px;top:-10px;border-radius:5px;border:1px solid #e0e0e0;background-color:#fff;
-                ul {display: flex;
-                    li {
-                        button {
-                            padding:5px 7px;
+                .figure-img {max-width:450px;
+                    .figure-meta { display:flex;padding-bottom:4px;color:#777;
+                        span {}
+                        button {color:#777; font-size: 8px;padding:0 10px;}
+                    }
+                    .figure {overflow: hidden;border-radius: 5px;position:relative;
+                        aside {top :20px;
+
                         }
-                        &+li{border-left:1px solid #e0e0e0;}
                     }
                 }
             }
@@ -42,7 +46,7 @@
                 .date {position: absolute; top:-12px;left: 50%;z-index:1;padding: 5px 10px;border-radius:16px;box-shadow: 0 0 0 1px gba(0,0,0,.12),0 1px 3px 0 rgba(0,0,0,.08);background-color:#fff;font-weight: bold;font-size:12px;transform: translate( -50%,0px);}
             }
 
-            .message-actions-menu {overflow:hidden;position:absolute;right:30px;bottom:450px;width:300px;z-index:1;background-color:#f7f7f7;border-radius: 8px; box-shadow: 0 0 0 1px rgba(0,0,0,.12),0 4px 12px 0 rgba(0,0,0,.12);
+            .message-actions-menu {display:none;overflow:hidden;position:absolute;right:30px;bottom:450px;width:300px;z-index:1;background-color:#f7f7f7;border-radius: 8px; box-shadow: 0 0 0 1px rgba(0,0,0,.12),0 4px 12px 0 rgba(0,0,0,.12);
                 ul {padding:6px 0;
                     li {padding:6px 0;
                         &+li {border-top:1px solid rgb(0 0 0 / 12%);}
@@ -64,6 +68,18 @@
     }
 }
 
+///공통
+
+.actions {display:block;position:absolute;right:20px;top:-10px;border-radius:5px;border:1px solid #e0e0e0;background-color:#fff;
+    ul {display: flex;
+        li {
+            button {
+                padding:5px 7px;
+            }
+            &+li{border-left:1px solid #e0e0e0;}
+        }
+    }
+}
 
 .popup {position:fixed;left:0;top:0;right:0;bottom:0;opacity:0;z-index:-10;padding: 30px;background: rgba(0,0,0,.6); display: flex; align-items: center; justify-content: center;
     &.active { z-index:9999; opacity:1;}
