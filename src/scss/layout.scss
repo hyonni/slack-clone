@@ -3,7 +3,7 @@
     .workspace {grid-area:grid-workspace;}
 }
 
-.workspace {display:grid;grid-template-rows: auto;position:relative;grid-template-columns: 251px auto;grid-template-areas: 'grid-sidebar grid-contents';
+.workspace {display:grid;grid-template-rows: auto;position:relative;grid-template-columns: 251px auto auto;grid-template-areas: 'grid-sidebar grid-contents';
     .sidebar {display:grid;grid-area:grid-sidebar;grid-template-rows: auto;grid-template-columns: auto;grid-template-areas: 'grid-sidebar-inner';
         .inner {grid-area:grid-sidebar-inner;display:flex;flex-direction:column;min-height:0;min-width:0;}
         .list {min-height:0;width:100%;position:relative;padding:0;display:flex;flex-direction:column;height:0;flex:1 0 auto;overflow:auto;padding-top:12px;}
